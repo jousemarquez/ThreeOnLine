@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tresraya.ThreeOnLineController">
+    <!-- // UN VBOX es un control que nos permite ordenar los controles que se metan dentro.-->
+    <!-- Se inician las restricciones de tamaño de las columnas y las filas -->
+    <columnConstraints>
+        <ColumnConstraints percentWidth="33.0" />
+        <ColumnConstraints percentWidth="33.0" />
+        <ColumnConstraints percentWidth="34.0" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="33.0" />
+        <RowConstraints percentHeight="33.0" />
+        <RowConstraints percentHeight="33.0" />
+    </rowConstraints>
+
+    <ToggleButton fx:id="bt00" onAction="#btClick" GridPane.columnIndex="0" GridPane.rowIndex="0" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt01" onAction="#btClick" GridPane.columnIndex="0" GridPane.rowIndex="1" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt02" onAction="#btClick" GridPane.columnIndex="0" GridPane.rowIndex="2" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt10" onAction="#btClick" GridPane.columnIndex="1" GridPane.rowIndex="0" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt11" onAction="#btClick" GridPane.columnIndex="1" GridPane.rowIndex="1" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt12" onAction="#btClick" GridPane.columnIndex="1" GridPane.rowIndex="2" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt21" onAction="#btClick" GridPane.columnIndex="2" GridPane.rowIndex="1" maxWidth="Infinity" minHeight="Infinity" />
+    <ToggleButton fx:id="bt22" onAction="#btClick" GridPane.columnIndex="2" GridPane.rowIndex="2" maxWidth="Infinity" minHeight="Infinity" />
+
+</GridPane>
